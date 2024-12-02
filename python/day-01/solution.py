@@ -1,5 +1,5 @@
+from collections import Counter
 from pathlib import Path
-from typing import Counter
 
 DIR_CURRENT = Path(__file__).parent.absolute()
 
