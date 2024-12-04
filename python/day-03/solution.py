@@ -37,7 +37,7 @@ def part_2(pm: str) -> int:
 
 
 if __name__ == "__main__":
-    fp_input = DIR_CURRENT / "input.txt"
+    fp_input = DIR_CURRENT / "input_small.txt"
     input_txt = fp_input.read_text().strip()
 
     part_1_res = part_1(input_txt)
