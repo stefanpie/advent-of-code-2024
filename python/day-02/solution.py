@@ -36,6 +36,15 @@ def check_single_report(report: T_report) -> bool:
 def part_1(data: T_reports) -> int:
     num_safe = 0
     for report in data:
+        if check_single_report(report):
+            num_safe += 1
+
+    return num_safe
+
+
+def part_2(data: T_reports) -> int:
+    num_safe = 0
+    for report in data:
         report_varients = [report]
         for i in range(len(report)):
             report_varient = report[:i] + report[i + 1 :]
@@ -56,3 +65,6 @@ if __name__ == "__main__":
 
     part_1_result = part_1(data)
     print(f"Part 1: {part_1_result}")
+
+    part_2_result = part_2(data)
+    print(f"Part 2: {part_2_result}")
